@@ -4,14 +4,14 @@ import qgrid
 import sweetviz as sv
 from ipywidgets import interact, interact_manual
 
-
+patients_df = pd.read_csv('patients.csv', sep=',')
+diagnosis_df = pd.read_csv('diagnosis.csv', sep=',')
+encounters_df = pd.read_csv('encounters.csv', sep=',')
+medication_df = pd.read_csv('medication.csv', sep=',')
 
 
 def dataframe_2_qgrid(x):
-    patients_df = pd.read_csv('patients.csv', sep=',')
-    diagnosis_df = pd.read_csv('diagnosis.csv', sep=',')
-    encounters_df = pd.read_csv('encounters.csv', sep=',')
-    medication_df = pd.read_csv('medication.csv', sep=',')
+
 
     col_opts = {'editable': False}
 
