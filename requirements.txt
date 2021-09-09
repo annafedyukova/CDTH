@@ -12,4 +12,4 @@ graphviz==2.38
 holoviews==1.14.5
 hvplot==0.7.3
 matplotlib_venn==0.11.6                   
-pydotplus=2.0.2
+pydotplus==2.0.2
