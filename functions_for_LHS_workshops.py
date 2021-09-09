@@ -9,9 +9,7 @@ diagnosis_df = pd.read_csv('diagnosis.csv', sep=',')
 encounters_df = pd.read_csv('encounters.csv', sep=',')
 medication_df = pd.read_csv('medication.csv', sep=',')
 
-
 def dataframe_2_qgrid(x):
-
 
     col_opts = {'editable': False}
 
@@ -84,7 +82,6 @@ def df_2_visualized_EDA(x):
     return analysis.show_notebook()
     
 def cohort_creation():
-
     # Filtering table 'Encounters' by type of care setting name and time offset between hospitalisation and a day
     # when a patient was diagnosed with diabetes:
     encounters_inp_df=encounters_df[(encounters_df['CARE_SETTING_NAME'].str.contains('INPATIENT')) & (encounters_df['DAYS_ENC_INDEX']>0)]
